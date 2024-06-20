@@ -106,8 +106,22 @@ java -cp target/Exercise_2-1.0-SNAPSHOT.jar edu.escuelaing.arsw.Exercise_2.Exerc
 
 ```
 
-Follow the console instructions to input a URL and download its content.
+After running Exercise_2, to open the generated HTML file, use the appropriate command based on your operating system:
 
+-  **On Windows:**
+```sh
+start index.html
+```
+
+-  **On macOS:**
+```sh
+open index.html
+```
+
+-  **On Linux:**
+```sh
+xdg-open index.html
+```
 
 #### Exercise_3
 
@@ -125,6 +139,7 @@ java -cp target/Exercise_3-1.0-SNAPSHOT.jar edu.escuelaing.arsw.Exercise_3.EchoC
 ```
 This establishes a TCP connection where the client sends messages to the server and receives echoes back.
 
+
 #### Exercise_4
 
 To run Exercise_4, first start the server:
@@ -132,14 +147,16 @@ To run Exercise_4, first start the server:
 ```sh
 java -cp target/Exercise_4-1.0-SNAPSHOT.jar edu.escuelaing.arsw.Exercise_4.EchoServer_Exercise4
 ```
-
+This server implements a functionality where it receives a number and performs an operation based on the client's request. By default, the server calculates the cosine of the received number. However, if the server receives a message starting with "fun:", it changes its operation to either sine, cosine, or tangent as specified in the message. For instance, sending "fun
+" instructs the server to compute the sine of subsequent numbers.
 Then, in another terminal, run the client:
 
 ```sh
 java -cp target/Exercise_4-1.0-SNAPSHOT.jar edu.escuelaing.arsw.Exercise_4.EchoClient_Exercise4
 ```
 
-The client will send a number to the server and receive its cosine back.
+The client interacts with the server by sending numbers. It expects to receive the result of the corresponding trigonometric operation (defaulting to cosine unless specified otherwise with "fun:"). For example, sending the number 0 will result in the server responding with the cosine of 0, which is 1. Sending subsequent numbers or changing the function with "fun:" prefix will adjust the server's behavior accordingly.
+
 
 #### Exercise_5
 
@@ -149,8 +166,12 @@ To run Exercise_5, first start the server:
 java -cp target/Exercise_5-1.0-SNAPSHOT.jar edu.escuelaing.arsw.Exercise_5.HttpServer_Exercise5
 
 ```
-
-The basic HTTP server will respond to GET requests with a simple HTML page and an image.
+- **Accessing the Server**
+  
+  After starting the server, open your web browser and navigate to:
+    ```arduino
+    http://localhost:53000/
+    ```
 
 
 #### Exercise_6
@@ -161,8 +182,21 @@ To run Exercise_6, first start the server:
 java -cp target/Exercise_6-1.0-SNAPSHOT.jar edu.escuelaing.arsw.Exercise_6.HttpServer_Exercise6
 
 ```
-The enhanced HTTP server will serve static files from the specified directory.
+- **Accessing the Server**
 
+  After starting the server, open your web browser and navigate to the following URLs:
+
+    1. For the index.html file:
+       
+       ```arduino
+        http://localhost:53000/index.html
+        ```
+       
+    2. For the PictureExercise6.jpg image file:
+       
+       ```arduino
+        http://localhost:53000/PictureExercise6.jpg
+        ```
 
 #### Exercise_7
 
@@ -179,7 +213,11 @@ Then, in another terminal, run the client:
 java -cp target/Exercise_7-1.0-SNAPSHOT.jar edu.escuelaing.arsw.Exercise_7.DatagramTimeClient_Exercise7
 ```
 
-The client will send requests to the server to fetch the current server time.
+- **Server Behavior Summary**
+    - Continuous Updates: The server sends current time messages to connected clients.
+    - Client Interaction: Clients receive these time updates.
+    - Server Restart: Upon restarting the server, time updates resume for clients.
+    - Update Interval: Time messages are sent every 5 seconds.
 
 ## Built With
 
