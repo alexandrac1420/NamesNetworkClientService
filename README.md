@@ -7,11 +7,12 @@ This repository contains a series of practical exercises to learn about socket p
 
 1. **Exercise_1**: Exercise to print details of a URL using Java's `URL` class.
 2. **Exercise_2**: Application to download the content of a URL and save it to a local file.
-3. **Exercise_3**: Basic implementation of a client and server communicating over TCP sockets.
-4. **Exercise_4**: Extension of Exercise_3 where the client sends a number to the server and receives its cosine.
-5. **Exercise_5**: Basic HTTP server responding with a simple HTML page and an image for GET requests.
-6. **Exercise_6**: Enhanced version of Exercise_5 serving static files (HTML, images) from a local directory.
-7. **Exercise_7**: Implementation of a UDP client and server to fetch and send server time.
+3. **Exercise_4.3.1**: Basic implementation of a client and server communicating over TCP sockets.
+4. **Exercise_4.3.2**: Extension of Exercise_3 where the client sends a number to the server and receives its cosine.
+5. **Exercise_4.4**: Basic HTTP server responding with a simple HTML page and an image for GET requests.
+6. **Exercise_4.5.1**: Enhanced version of Exercise_5 serving static files (HTML, images) from a local directory.
+7. **Exercise_5.1**: Implementation of a UDP client and server to fetch and send server time.
+8. **Exercise_6.4.1**: Using RMI, develop an application that connects to a remote server to start a chat with another client. It prompts for an IP address and port to connect, and also specifies a port to publish the object handling remote calls.
 
 
 ## Getting Started
@@ -128,9 +129,9 @@ xdg-open index.html
 ![Pagina](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/5f90566a-fc3e-49f7-940c-86f023c802f1)
 
 
-#### Exercise_3
+#### Exercise_4.3.1
 
-To run Exercise_3, first start the server:
+To run Exercise_4.3.1, first start the server:
 
 ```sh
 java -cp target/NamesNetworkClientService-1.0-SNAPSHOT.jar edu.escuelaing.arsw.Exercise_3.EchoServer_Exercise3
@@ -148,9 +149,9 @@ This establishes a TCP connection where the client sends messages to the server 
 ![Client](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/be5487a8-5584-4827-a44c-3bd6bd3ed7af)
 
 
-#### Exercise_4
+#### Exercise_4.3.2
 
-To run Exercise_4, first start the server:
+To run Exercise_4.3.2, first start the server:
 
 ```sh
 java -cp target/NamesNetworkClientService-1.0-SNAPSHOT.jar edu.escuelaing.arsw.Exercise_4.EchoServer_Exercise4
@@ -170,9 +171,9 @@ The client interacts with the server by sending numbers. It expects to receive t
 ![Client](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/fd6217ee-5da7-4c5d-abbf-9d3ff3822cab)
 
 
-#### Exercise_5
+#### Exercise_4.4
 
-To run Exercise_5, first start the server:
+To run Exercise_4.4, first start the server:
 
 ```sh
 java -cp target/NamesNetworkClientService-1.0-SNAPSHOT.jar edu.escuelaing.arsw.Exercise_5.HttpServer_Exercise5
@@ -190,9 +191,9 @@ java -cp target/NamesNetworkClientService-1.0-SNAPSHOT.jar edu.escuelaing.arsw.E
 ![HTTP](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/7d145bfa-eeb6-49f3-8088-0ace92eac956)
 
 
-#### Exercise_6
+#### Exercise_4.5.1
 
-To run Exercise_6, first start the server:
+To run Exercise_4.5.1, first start the server:
 
 ```sh
 java -cp target/NamesNetworkClientService-1.0-SNAPSHOT.jar edu.escuelaing.arsw.Exercise_6.HttpServer_Exercise6
@@ -218,9 +219,9 @@ java -cp target/NamesNetworkClientService-1.0-SNAPSHOT.jar edu.escuelaing.arsw.E
 ![jpg](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/f88b623d-fb1d-4d87-9edf-c283623da5d6)
 
 
-#### Exercise_7
+#### Exercise_5.2.1
 
-To run Exercise_7, first start the server:
+To run Exercise_5.2.1, first start the server:
 
 ```sh
 java -cp target/NamesNetworkClientService-1.0-SNAPSHOT.jar edu.escuelaing.arsw.Exercise_7.DatagramTimeServer_Exercise7
@@ -235,14 +236,38 @@ java -cp target/NamesNetworkClientService-1.0-SNAPSHOT.jar edu.escuelaing.arsw.E
 
 - **Server Behavior Summary**
     - Continuous Updates: The server sends current time messages to connected clients.
+          ![image](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/e491bc2d-012f-4b55-a66e-066186e3a9a4)
     - Client Interaction: Clients receive these time updates.
+      ![image](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/88768a0b-502c-47e7-89c2-0d46abab451b)
     - Server Restart: Upon restarting the server, time updates resume for clients.
+      ![image](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/8ab2e2a8-e173-43bf-b66e-7ee639f20d6e)
+      
     - Update Interval: Time messages are sent every 5 seconds.
+      ![image](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/9f160577-4eb6-419f-9cf2-425414fd0056)
 
-![image](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/e491bc2d-012f-4b55-a66e-066186e3a9a4)
-![image](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/88768a0b-502c-47e7-89c2-0d46abab451b)
-![image](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/8ab2e2a8-e173-43bf-b66e-7ee639f20d6e)
-![image](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/9f160577-4eb6-419f-9cf2-425414fd0056)
+
+
+#### Exercise_6.4.1
+
+To run Exercise_6.4.1, first start the server:
+
+```sh
+& 'C:\Program Files\Java\jdk-21\bin\java.exe' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\alexa\Downloads\NamesNetworkClientService\target\classes' 'edu.escuelaing.arsw.Exercise_8.ChatServiceImpl'
+
+```
+
+Then, in another terminal, run the client:
+
+```sh
+& 'C:\Program Files\Java\jdk-21\bin\java.exe' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\alexa\Downloads\NamesNetworkClientService\target\classes' 'edu.escuelaing.arsw.Exercise_8.ChatClient' 
+```
+![Server](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/2e07f9dd-697f-4981-82dc-71b9780cb89f)
+
+![Client1](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/8bc8bfe2-7fc5-4e42-b582-b87f2b0b3e44)
+
+![Client2](https://github.com/alexandrac1420/NamesNetworkClientService/assets/138069735/9fb439fc-00ee-4829-83f8-e862877f369e)
+
+
 
 
 ## Built With
