@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="edu.escuelaing.arsw.AppTest" time="0.047" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="edu.escuelaing.arsw.AppTest" time="0.02" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CO"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\alexa\AppData\Local\Temp\surefire10756675289885033833\surefirebooter-20240619180202933_3.jar C:\Users\alexa\AppData\Local\Temp\surefire10756675289885033833 2024-06-19T18-02-02_808-jvmRun1 surefire-20240619180202933_1tmp surefire_0-20240619180202933_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\alexa\AppData\Local\Temp\surefire4387877584592469077\surefirebooter-20240622210841366_3.jar C:\Users\alexa\AppData\Local\Temp\surefire4387877584592469077 2024-06-22T21-08-41_242-jvmRun1 surefire-20240622210841366_1tmp surefire_0-20240622210841366_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\alexa\Downloads\NamesNetworkClientService\target\test-classes;C:\Users\alexa\Downloads\NamesNetworkClientService\target\classes;C:\Users\alexa\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\alexa\AppData\Local\Temp\surefire10756675289885033833\surefirebooter-20240619180202933_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\alexa\AppData\Local\Temp\surefire4387877584592469077\surefirebooter-20240622210841366_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
